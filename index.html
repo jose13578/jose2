@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            margin: -10px; 
+        }
+        .container > div {
+            flex: 0 0 calc(25% - 20px); 
+            margin: 10px; 
+            text-align: center; 
+        }
+        img {
+            width: 100%; 
+            height: auto; 
+        }
+
+        @media screen and (max-width: 1024px) {
+            .container > div {
+                flex: 0 0 calc(50% - 20px); 
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+            .container > div {
+                flex: 0 0 calc(100% - 20px); 
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Projects: </h1>
+    <div class="title">
+        <h3>My distractions</h3>
+    </div>
+    <div class="container">
+        <div class="uno">
+            <img src="got.jpg" alt="">
+            <p>Ciudad gotica</p>
+        </div>
+        <div class="dos">
+            <img src="arkham.jpg" alt="">
+            <p>Arkham</p>
+        </div>
+        <div class="tres">
+            <img src="milenium.jpg" alt="">
+            <p>Milenium</p>
+        </div>
+        <div class="cuatro">
+            <img src="tatooine.jpg" alt="">
+            <p>Tatooine</p>
+        </div>
+        <div class="cinco">
+            <img src="BOTW.jpg" alt="">
+            <p>Breath of the Wild</p>
+        </div>
+        <div class="seis">
+            <img src="zelda.jpg" alt="">
+            <p>Ocarina of time</p>
+        </div>
+        <div class="siete">
+            <img src="TLOU1.jpg" alt="">
+            <p>The Last of Us 2</p>
+        </div>
+        <div class="ocho">
+            <img src="tlouu2.jpg" alt="">
+            <p>The Last of Us 2</p>
+        </div>
+    </div>
+</body>
+</html>
+
+
